@@ -1,0 +1,15 @@
+def classify_bp(systolic, diastolic):
+    if systolic > 140 or diastolic > 90:
+        return "High"
+    else:
+        return "Normal"
+
+def add_vitals():
+    try:
+        s = int(input("Systolic: "))
+        d = int(input("Diastolic: "))
+        print("Status:", classify_bp(s, d))
+    except:
+        print("Invalid input")
+
+add_vitals()
