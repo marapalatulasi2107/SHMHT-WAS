@@ -1,0 +1,14 @@
+class Record:
+    def __init__(self, date):
+        self.date = date
+
+class VitalsRecord(Record):
+    def __init__(self, date, bp):
+        super().__init__(date)
+        self.bp = bp
+
+    def show(self):
+        print(self.date, self.bp)
+
+r = VitalsRecord("2026-04-27", "120/80")
+r.show()
