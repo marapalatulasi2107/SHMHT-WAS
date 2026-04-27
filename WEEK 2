@@ -1,0 +1,16 @@
+def menu():
+    while True:
+        print("\n1. Add Patient")
+        print("2. Exit")
+
+        choice = input("Enter choice: ")
+
+        if choice == "1":
+            print("Patient Added (dummy)")
+        elif choice == "2":
+            print("Exiting...")
+            break
+        else:
+            print("Invalid choice")
+
+menu()
