@@ -1,0 +1,27 @@
+vitals_log = []
+
+def add_vitals():
+    bp = input("Enter BP (e.g. 120/80): ")
+    heart_rate = int(input("Enter Heart Rate: "))
+    
+    record = {
+        "bp": bp,
+        "heart_rate": heart_rate
+    }
+
+    vitals_log.append(record)
+
+def show_vitals():
+    for v in vitals_log:
+        print(v)
+
+while True:
+    print("\n1. Add Vitals\n2. Show\n3. Exit")
+    ch = input("Choice: ")
+
+    if ch == "1":
+        add_vitals()
+    elif ch == "2":
+        show_vitals()
+    else:
+        break
