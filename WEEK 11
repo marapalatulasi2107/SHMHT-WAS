@@ -1,0 +1,11 @@
+import pandas as pd
+
+data = {
+    "month": ["Jan", "Feb", "Mar"],
+    "expense": [2000, 3000, 2500]
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+print("Total:", df["expense"].sum())
