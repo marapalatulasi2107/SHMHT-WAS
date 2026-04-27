@@ -1,0 +1,8 @@
+import numpy as np
+
+bp_values = np.array([120, 130, 150, 160])
+
+print("Average BP:", np.mean(bp_values))
+
+if np.any(bp_values > 140):
+    print("Alert: High BP detected")
