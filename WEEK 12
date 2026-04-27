@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+
+months = ["Jan", "Feb", "Mar"]
+expenses = [2000, 3000, 2500]
+
+plt.plot(months, expenses)
+plt.title("Monthly Expenses")
+plt.savefig("chart.png")
+plt.show()
