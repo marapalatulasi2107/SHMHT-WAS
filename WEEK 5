@@ -1,0 +1,8 @@
+patient = {
+    "name": "Sam",
+    "age": 20,
+    "conditions": {"diabetes", "bp"},
+    "allergies": {"dust"}
+}
+
+print(patient)
